@@ -283,8 +283,7 @@ body:has(.report-print-mode) .web-brand-bar { display: none; }
 .wizard-progress-item.is-active .wizard-progress-dot { background: #c76108; color: #fff; }
 .wizard-progress-item.is-done .wizard-progress-dot { background: #d7b98e; color: #fff; }
 .wizard-progress-icon {
-  display: block; width: 48px; height: 46px; margin: 0 auto 5px; fill: none; stroke: #ff8612;
-  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+  display: block; width: 48px; height: 46px; margin: 0 auto 5px; object-fit: contain;
 }
 .wizard-progress-label { display: block; font-weight: 800; }
 
@@ -817,9 +816,15 @@ body:has(.report-print-mode) .web-brand-bar { display: none; }
   position: relative; z-index: 1; flex: 0 0 auto; padding: 0 50px max(22px, env(safe-area-inset-bottom));
   text-align: center; background: transparent;
 }
+.welcome-headline {
+  display: block; width: fit-content; max-width: 100%; margin: -14px auto; padding: 14px 22px;
+  border-radius: 20px; background: rgba(255, 252, 245, .78);
+  box-shadow: 0 6px 20px -10px rgba(60, 45, 20, .35);
+  -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+}
 .welcome-brand-label {
-  margin-bottom: 18px; color: #c96d28; font-size: 16px; font-weight: 700;
-  letter-spacing: .12em; transform: translateY(-24px);
+  margin-bottom: 8px; color: #c96d28; font-size: 16px; font-weight: 700;
+  letter-spacing: .12em;
 }
 .welcome-panel h1 {
   margin: 0; color: #2f2925; font-size: clamp(25px, 7vw, 31px);
@@ -848,7 +853,7 @@ body:has(.report-print-mode) .web-brand-bar { display: none; }
 }
 @media (max-height: 700px) {
   .welcome-panel { padding-right: 42px; padding-left: 42px; }
-  .welcome-brand-label { margin-bottom: 13px; font-size: 14px; transform: translateY(-14px); }
+  .welcome-brand-label { margin-bottom: 6px; font-size: 14px; }
   .welcome-panel h1 { font-size: 23px; }
   .welcome-panel p { margin: 8px 0 18px; font-size: 13px; }
   .welcome-actions button { min-height: 48px; }
@@ -1488,7 +1493,7 @@ table.matrix th { background: var(--navy-800); color: #fff; font-weight: 600; }
     color: #c76108;
     border: 1px solid #ff8612;
   }
-  .wizard-progress-icon { display: none; }
+  .wizard-progress-icon { display: block; width: 26px; height: 26px; margin: 0 auto 2px; }
   .wizard-progress-label { font-size: 9px; line-height: 1.1; white-space: nowrap; }
 
   /* 본문을 스크롤할 때는 아이콘을 덜어내고 단계명과 즉시 저장 기능만 고정한다. */
@@ -1745,7 +1750,7 @@ table.matrix th { background: var(--navy-800); color: #fff; font-weight: 600; }
 /* ---------- 속지 배경 ---------- */
 .page-vine-bg {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
-  background-image: url(../assets/리포트 속지.png);
+  background-image: url(../assets/inner-vine.png);
   background-repeat: no-repeat; background-position: center; background-size: 100% 100%;
   /* 이미지 좌상단의 진한 오렌지 영역이 마스트헤드/제목 글자와 겹쳐 가독성이 떨어져 옅게 낮춘다 */
   opacity: .35;
@@ -1771,10 +1776,14 @@ table.matrix th { background: var(--navy-800); color: #fff; font-weight: 600; }
 .cover-logo-text { font-size: 13px; font-weight: 600; color: var(--navy-900); }
 .cover-logo-img { height: 34px; width: auto; display: block; }
 .cover-kicker { margin-top: 34px; font-size: 15px; color: var(--ink); line-height: 1.5; }
-.cover-title { margin: 44px 0 0; font-size: 52px; font-weight: 800; line-height: 1.2; color: #fff; letter-spacing: -1px; }
-.cover-title-main { white-space: nowrap; }
-.cover-title-suffix { margin-left: 10px; font-size: 30px; font-weight: 800; white-space: nowrap; }
-.cover-title-subtitle { display: block; margin-top: 6px; font-size: 30px; font-weight: 800; }
+.cover-title {
+  margin: 30px 0 -14px -22px; font-size: 52px; font-weight: 800; line-height: 1.2; color: #fff; letter-spacing: -1px;
+  width: fit-content; max-width: calc(100% + 22px); padding: 14px 22px; border-radius: 22px;
+  background: rgba(255, 252, 245, .55);
+}
+.cover-title-main { white-space: nowrap; color: #ed6816; }
+.cover-title-suffix { margin-left: 10px; font-size: 30px; font-weight: 800; white-space: nowrap; color: #ed6816; }
+.cover-title-subtitle { display: block; margin-top: 6px; font-size: 30px; font-weight: 800; color: var(--navy-900); }
 .cover-date-badge {
   display: inline-block; width: fit-content; margin-top: 26px;
   padding: 10px 24px; background: rgba(251, 233, 190, .9); border-radius: 4px;

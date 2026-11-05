@@ -6,7 +6,7 @@ export default function PageFrame({ eyebrow, title, pageNumber, totalPages, chil
       <div className="page-vine-bg" aria-hidden="true" />
       <div className={`page-pad ${contentClassName}`}>
         <div className="masthead">
-          <span className="masthead-kr">제이엠 자산관리 플래너</span>
+          <span className="masthead-kr">위너스제이엠 자산관리 플래너</span>
           <span className="masthead-en">JM Financial Planner{plan === 'Standard' ? '' : ` (${plan})`}</span>
         </div>
         {eyebrow && <div className="eyebrow">{eyebrow}</div>}

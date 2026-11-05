@@ -1,5 +1,5 @@
-import heroImage from '../../../assets/리포트 표지 디자인.png';
-import jmCareerLogo from '../../../assets/제이엠커리어 로고.png';
+import heroImage from '../../../assets/hero-beanstalk.jpg';
+import winnersJmLogo from '../../../assets/위너스제이엠 로고.webp';
 import aiDataCenterLogo from '../../../assets/ai데이터센터로고.png';
 import { REPORT_DISCLAIMERS } from './legalNotices';
 
@@ -18,13 +18,13 @@ export default function CoverPage({ generatedAt, clientName, title, titleSuffix,
       <img className="cover-bg" src={heroImage} alt="성장 그래프를 배경으로 한 리포트 표지 디자인" />
       <div className="cover-frame">
         <div className="cover-topbar">
-          <img className="cover-logo-img" src={jmCareerLogo} alt="제이엠커리어" />
+          <img className="cover-logo-img" src={winnersJmLogo} alt="위너스제이엠" />
         </div>
 
         <h1 className="cover-title">
-          <span className="cover-title-main">{title || '제이엠 자산관리 플래너'}</span>
+          <span className="cover-title-main">{title || '위너스제이엠 자산관리 플래너'}</span>
           {titleSuffix && <span className="cover-title-suffix">{titleSuffix}</span>}
-          <br /><span className="cover-title-subtitle">{subtitle || 'JM Financial Planner'}</span>
+          <br /><span className="cover-title-subtitle">{subtitle || 'Winners JM Financial Planner'}</span>
         </h1>
 
         <div className="cover-date-badge">Date&nbsp;&nbsp;{formatDate(date)}</div>

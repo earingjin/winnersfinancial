@@ -57,7 +57,7 @@ export default function Report({ result, onRestart, onBack, onHome, clientName }
       <CoverPage
         generatedAt={generatedAt}
         clientName={clientName}
-        title="제이엠 자산관리 플래너"
+        title="위너스제이엠 자산관리 플래너"
       />
 
       <ExecutiveSummaryPage

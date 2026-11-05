@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import homeImage from '../../assets/홈화면.webp';
+import homeImage from '../../assets/inner-vine.webp';
 import AppCopyright from '../AppCopyright';
 import { ConfirmModal } from '../common/AppDialog';
 import { toKnownUserMessage } from '../../state/userFacingErrors';

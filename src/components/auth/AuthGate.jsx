@@ -122,7 +122,7 @@ export default function AuthGate({ title = '잭앤리치', allowSignup = true, i
     <div className="auth-gate">
       <div className="auth-page-heading">
         <div className="auth-page-brand">JM FINANCIAL PLANNER</div>
-        <p className="auth-page-title">제이엠 자산관리 플래너</p>
+        <p className="auth-page-title">위너스제이엠 자산관리 플래너</p>
       </div>
       {mode === 'login' && title === '잭앤리치' && (
         <section className="auth-login-notice" aria-labelledby="auth-login-notice-title">

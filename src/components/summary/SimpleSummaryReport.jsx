@@ -1451,8 +1451,8 @@ export default function SimpleSummaryReport({ result, input, onBack, onEdit, onH
           <p>본 진단 결과는 현재 재무상태와 은퇴 준비 수준을 파악하기 위한 참고자료입니다.</p>
           <p>본 서비스는 개인별 자산 조정, 투자, 절세 등 구체적인 재무 솔루션을 제공하지 않습니다. 진단 결과를 바탕으로 자산관리와 관련된 의사결정을 진행하실 경우, 관련 분야 전문가와 충분히 상담하시기 바랍니다.</p>
           <div className="ss-result-notice-brand">
-            <img src={aiDataCenterLogo} alt="제이엠커리어 더휴먼 AI센터" />
-            <span>제이엠커리어 더휴먼 AI센터</span>
+            <img src={aiDataCenterLogo} alt="위너스제이엠 더휴먼 AI센터" />
+            <span>위너스제이엠 더휴먼 AI센터</span>
           </div>
         </div>
         <div className="ss-download-actions">

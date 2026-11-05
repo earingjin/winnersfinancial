@@ -1,5 +1,5 @@
-import heroImage from '../../../assets/리포트 표지 디자인.png';
-import jmCareerLogo from '../../../assets/제이엠커리어 로고.png';
+import heroImage from '../../../assets/hero-beanstalk.jpg';
+import winnersJmLogo from '../../../assets/위너스제이엠 로고.webp';
 import aiDataCenterLogo from '../../../assets/ai데이터센터로고.png';
 import { REPORT_DISCLAIMERS } from './legalNotices';
 
@@ -11,7 +11,7 @@ export default function BackCoverPage({ generatedAt }) {
       <img className="cover-bg" src={heroImage} alt="성장 그래프를 배경으로 한 리포트 표지 디자인" />
       <div className="cover-frame">
         <div className="cover-topbar">
-          <img className="cover-logo-img" src={jmCareerLogo} alt="제이엠커리어" />
+          <img className="cover-logo-img" src={winnersJmLogo} alt="위너스제이엠" />
         </div>
 
         <h2 className="backcover-title"></h2>

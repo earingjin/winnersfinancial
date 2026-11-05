@@ -1,4 +1,4 @@
-import welcomeImage from '../../assets/웰컴화면.webp';
+import welcomeImage from '../../assets/hero-beanstalk.webp';
 import AppCopyright from '../AppCopyright';
 
 export default function WelcomeScreen({ onLogin, onSignup }) {
@@ -10,8 +10,10 @@ export default function WelcomeScreen({ onLogin, onSignup }) {
         </div>
 
         <div className="welcome-panel">
-          <div className="welcome-brand-label">제이엠 자산관리 플래너</div>
-          <h1 id="welcome-title">자산의 가치를<br /><span>더 크게, 더 현명하게</span></h1>
+          <div className="welcome-headline">
+            <div className="welcome-brand-label">위너스제이엠 자산관리 플래너</div>
+            <h1 id="welcome-title">자산의 가치를<br /><span>더 크게, 더 현명하게</span></h1>
+          </div>
 
           <div className="welcome-actions">
             <button type="button" className="welcome-login" onClick={onLogin}>로그인</button>
