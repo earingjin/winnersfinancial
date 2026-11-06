@@ -181,7 +181,7 @@ export default function AuthGate({ title = '잭앤리치', allowSignup = true, i
               </div>
             )}
             <label className="field">
-              <span className="field-label">휴대폰 번호 8자리 (010 제외)</span>
+              <span className="field-label">{mode === 'login' ? '아이디 (휴대폰 번호 뒤 8자리 · 관리자: admin)' : '휴대폰 번호 8자리 (010 제외)'}</span>
               <input
                 type="text"
                 value={identifier}
