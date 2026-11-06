@@ -24,7 +24,7 @@ export default function CoverPage({ generatedAt, clientName, title, titleSuffix,
         <h1 className="cover-title">
           <span className="cover-title-main">{title || '위너스제이엠 자산관리 플래너'}</span>
           {titleSuffix && <span className="cover-title-suffix">{titleSuffix}</span>}
-          <br /><span className="cover-title-subtitle">{subtitle || 'Winners JM Financial Planner'}</span>
+          <br /><span className="cover-title-subtitle">{subtitle || 'WinnersJM Financial Planner'}</span>
         </h1>
 
         <div className="cover-date-badge">Date&nbsp;&nbsp;{formatDate(date)}</div>

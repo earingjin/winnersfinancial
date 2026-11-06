@@ -50,7 +50,7 @@ export default function AdminDashboard({ onSignOut }) {
     <div className="admin-dashboard">
       <header className="admin-header">
         <div>
-          <div className="app-brand">JM FINANCIAL PLANNER</div>
+          <div className="app-brand">WinnersJM Financial Planner</div>
           <h1 className="admin-title">관리자 대시보드</h1>
         </div>
         <button type="button" className="app-header-signout admin-signout" onClick={onSignOut}>

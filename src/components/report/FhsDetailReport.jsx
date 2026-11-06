@@ -473,7 +473,7 @@ export default function FhsDetailReport({ result, onRestart, onBack, onHome, cli
         clientName={clientName}
         title="위너스제이엠 자산관리 플래너"
         titleSuffix="(Pro)"
-        subtitle="Winners JM Financial Planner"
+        subtitle="WinnersJM Financial Planner"
       />
 
       <IndicatorSummaryPage
