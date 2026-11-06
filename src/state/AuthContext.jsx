@@ -27,7 +27,9 @@ export function AuthProvider({ children }) {
   }, []);
 
   const signIn = useCallback(async (identifier, password) => {
-    const email = toAuthEmail(identifier);
+    // WinnersFinancial 관리자 로그인 별칭. 권한 판정은 서버의 profiles.role로 별도 검증한다.
+    const loginId = String(identifier ?? '').trim().toLowerCase();
+    const email = loginId === 'admin' ? 'admin@winnersjm.co.kr' : toAuthEmail(identifier);
     return supabase.auth.signInWithPassword({ email, password });
   }, []);
 
