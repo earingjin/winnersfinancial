@@ -37,7 +37,7 @@ export default function BackCoverPage({ generatedAt }) {
       </div>
       <div className="cover-footer">
         <img className="footer-logo" src={aiDataCenterLogo} alt="AI 데이터센터" />
-        <span className="cover-copyright">Copyright &copy; {year}. JMCAREER. All rights reserved.</span>
+        <span className="cover-copyright">Copyright &copy; {year} THEHUMANAICENTER. All rights reserved.</span>
       </div>
     </div>
   );

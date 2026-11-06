@@ -822,10 +822,12 @@ body:has(.report-print-mode) .web-brand-bar { display: none; }
   box-shadow: 0 6px 20px -10px rgba(60, 45, 20, .35);
   -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
 }
-.welcome-brand-label {
-  margin-bottom: 8px; color: #c96d28; font-size: 16px; font-weight: 700;
-  letter-spacing: .12em;
+.welcome-headline .welcome-brand-label {
+  margin-top: 2px; color: #766e68; font-size: 12px; font-weight: 600;
 }
+.welcome-panel .welcome-headline h1 { color: #704021; font-size: clamp(29px, 8vw, 34px); letter-spacing: -.025em; }
+.welcome-slogan { margin-top: 12px; color: #2f2925; font-size: clamp(19px, 5vw, 21px); font-weight: 700; line-height: 1.35; letter-spacing: -.035em; white-space: nowrap; }
+.welcome-slogan span { color: #ed6816; }
 .welcome-panel h1 {
   margin: 0; color: #2f2925; font-size: clamp(25px, 7vw, 31px);
   line-height: 1.35; letter-spacing: -.035em;

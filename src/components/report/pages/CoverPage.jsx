@@ -41,7 +41,7 @@ export default function CoverPage({ generatedAt, clientName, title, titleSuffix,
       </div>
       <div className="cover-footer">
         <img className="footer-logo" src={aiDataCenterLogo} alt="AI 데이터센터" />
-        <span className="cover-copyright">Copyright &copy; {date.getFullYear()}. JMCAREER. All rights reserved.</span>
+        <span className="cover-copyright">Copyright &copy; {date.getFullYear()} THEHUMANAICENTER. All rights reserved.</span>
       </div>
     </div>
   );

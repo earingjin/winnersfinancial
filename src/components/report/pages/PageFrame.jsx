@@ -16,7 +16,7 @@ export default function PageFrame({ eyebrow, title, pageNumber, totalPages, chil
       <div className="page-footer">
         <img className="footer-logo" src={aiDataCenterLogo} alt="AI 데이터센터" />
         <span className="footer-copyright">
-          Copyright &copy; {new Date().getFullYear()}. JMCAREER. All rights reserved.
+          Copyright &copy; {new Date().getFullYear()} THEHUMANAICENTER. All rights reserved.
           <span className="footer-pageno"> &nbsp;|&nbsp; {String(pageNumber).padStart(2, '0')} / {totalPages}</span>
         </span>
       </div>
