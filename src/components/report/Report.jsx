@@ -57,7 +57,8 @@ export default function Report({ result, onRestart, onBack, onHome, clientName }
       <CoverPage
         generatedAt={generatedAt}
         clientName={clientName}
-        title="위너스제이엠 자산관리 플래너"
+        title="Jack & Rich"
+        subtitle="WINNERSJM Financial Planner"
       />
 
       <ExecutiveSummaryPage

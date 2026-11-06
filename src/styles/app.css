@@ -1787,9 +1787,9 @@ table.matrix th { background: var(--navy-800); color: #fff; font-weight: 600; }
   width: fit-content; max-width: calc(100% + 22px); padding: 14px 22px; border-radius: 22px;
   background: rgba(255, 252, 245, .55);
 }
-.cover-title-main { white-space: nowrap; color: #ed6816; }
+.cover-title-main { white-space: nowrap; color: #ed6816; font-size: 60px; font-weight: 900; }
 .cover-title-suffix { margin-left: 10px; font-size: 30px; font-weight: 800; white-space: nowrap; color: #ed6816; }
-.cover-title-subtitle { display: block; margin-top: 6px; font-size: 30px; font-weight: 800; color: var(--navy-900); }
+.cover-title-subtitle { display: block; margin-top: 6px; font-size: 20px; font-weight: 400; color: var(--navy-900); }
 .cover-date-badge {
   display: inline-block; width: fit-content; margin-top: 26px;
   padding: 10px 24px; background: rgba(251, 233, 190, .9); border-radius: 4px;
