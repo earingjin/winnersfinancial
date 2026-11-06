@@ -952,10 +952,14 @@ body:has(.report-print-mode) .web-brand-bar { display: none; }
   background-size: cover;
   opacity: .4;
 }
+.auth-gate:not(.account-reset-gate)::before {
+  background-image: url(../assets/inner-vine.webp);
+}
 .auth-card { position: relative; z-index: 1; }
 .auth-copyright {
   position: absolute; left: 0; right: 0; bottom: 12px; z-index: 1;
-  padding: 0 16px; color: var(--ink-soft);
+  padding: 0 16px; color: var(--navy-900); font-weight: 600;
+  text-shadow: 0 1px 3px #fff, 0 0 6px #fff;
 }
 .auth-card {
   position: relative;
